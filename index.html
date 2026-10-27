@@ -1,1 +1,188 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arthur Reis Martins — Energy Engineer, Researcher and Entrepreneur.">
+  <title>Arthur Reis Martins | Personal Website</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f14;
+      --panel: #121922;
+      --text: #edf2f7;
+      --muted: #a6b2c2;
+      --accent: #70b7ff;
+      --border: #293545;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(920px, 90%); margin: auto; }
+    header { padding: 76px 0 46px; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .76rem;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      margin: 18px 0;
+    }
+    h2 { font-size: 1.35rem; margin-top: 0; }
+    .subtitle {
+      color: var(--muted);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      max-width: 670px;
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .links a {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 15px;
+      color: var(--text);
+      background: var(--panel);
+    }
+    .links a:hover { border-color: var(--accent); text-decoration: none; }
+    main { padding-bottom: 45px; }
+    section {
+      padding: 27px;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+    section p { color: var(--muted); }
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--border);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 4px 5px 4px 0;
+      font-size: .88rem;
+      color: var(--muted);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      padding: 25px 0 35px;
+      font-size: .88rem;
+    }
+    .lang { margin-top: 18px; font-size: .9rem; }
+    @media (max-width: 600px) {
+      header { padding-top: 48px; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Personal Website · Brazil</div>
+      <h1>Arthur Reis Martins</h1>
+      <p class="subtitle">
+        Energy Engineer · PhD Researcher at UFABC · Entrepreneur
+      </p>
+      <div class="links">
+        <a href="https://github.com/Arthur-RM" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="#contact">Contact ↗</a>
+      </div>
+      <p class="lang">
+        <a href="#about">English</a> ·
+        <a href="#sobre">Português</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am an Energy Engineer, researcher and entrepreneur working
+          at the intersection of nuclear engineering, advanced energy
+          systems and technological innovation.
+        </p>
+        <p>
+          My interests include reactor physics, neutron transport,
+          advanced modular reactors, computational simulation and
+          the development of innovative energy technologies.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research & Innovation</h2>
+        <p>
+          My work connects scientific research, engineering and
+          entrepreneurship, with a focus on advanced nuclear systems
+          and practical applications for emerging energy technologies.
+        </p>
+        <span class="tag">Nuclear Engineering</span>
+        <span class="tag">Reactor Physics</span>
+        <span class="tag">Monte Carlo Simulation</span>
+        <span class="tag">Energy Innovation</span>
+        <span class="tag">Entrepreneurship</span>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <p>
+          <strong>Prometheus Nuclear Technologies</strong><br>
+          Advanced nuclear systems and energy technology development.
+        </p>
+        <p>
+          <strong>Academic Research — UFABC</strong><br>
+          Research in energy engineering and advanced reactor concepts.
+        </p>
+      </section>
+
+      <section id="sobre" lang="pt-BR">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou engenheiro de energia, pesquisador e empreendedor,
+          atuando na interseção entre engenharia nuclear, sistemas
+          avançados de energia e inovação tecnológica.
+        </p>
+        <p>
+          Meus interesses incluem física de reatores, transporte
+          de nêutrons, reatores modulares avançados, simulação
+          computacional e desenvolvimento de tecnologias energéticas.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact / Contato</h2>
+        <p>
+          For research, technology and collaboration inquiries,
+          connect with me through my professional profiles.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Arthur-RM" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Arthur Reis Martins · Personal Website
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
